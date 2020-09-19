@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse justify-content-end font-title" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.md">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#page-top">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="berita.html">Berita</a>
+                        <a class="nav-link" href="berita.md">Berita</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"

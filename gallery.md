@@ -27,13 +27,13 @@
             <div class="collapse navbar-collapse justify-content-end font-title" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.md">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profil.html">Profil</a>
+                        <a class="nav-link" href="profil.md">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="berita.html">Berita</a>
+                        <a class="nav-link" href="berita.md">Berita</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -63,7 +63,7 @@
         </div>
         <div class="gallery-grid text-center">
             <div class="gallery-item pt-4 img-raised rounded">
-                <a href="gallery-detail.html">
+                <a href="gallery-detail.md">
                     <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
                     <p class="font-title">Curug</p>
                 </a>

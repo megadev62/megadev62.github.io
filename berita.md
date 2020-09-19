@@ -30,7 +30,7 @@
                         <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profil.html">Profil</a>
+                        <a class="nav-link" href="profil.md">Profil</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="#page-top">Berita</a>
@@ -46,7 +46,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Galeri</a>
+                        <a class="nav-link" href="gallery.md">Galeri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>

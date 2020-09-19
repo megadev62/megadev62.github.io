@@ -30,10 +30,10 @@
                         <a class="nav-link" href="#page-top">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="profil.html">Profil</a>
+                        <a class="nav-link" href="profil.md">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="berita.html">Berita</a>
+                        <a class="nav-link" href="berita.md">Berita</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -47,7 +47,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Galeri</a>
+                        <a class="nav-link" href="gallery.md">Galeri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
