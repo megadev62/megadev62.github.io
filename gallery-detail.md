@@ -45,7 +45,7 @@
                             <a class="dropdown-item" href="#">KK</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="gallery.html">Galeri</a>
                     </li>
                     <li class="nav-item">
@@ -57,60 +57,42 @@
 
     </nav>
     <!-- container -->
-    <div class="organisasi my-3">
-        <div class="container text-center">
-            <div class="font-title title">
-                <span class="border-bt-2">Struktur Organisasi</span>
-            </div>
-            <div class="struktur row mt-4">
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
+    <div class="container my-5 gallery-pages">
+        <div class="font-title title text-center">
+            <span>Galeri Foto</span>
+        </div>
+        <div class="gallery-grid">
+            <a href="#img1">
+                <div class="gallery-item text-center">
+                    <img src="./assets/img/curug2.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
+                <div class="overlay text-center" id="img1">
+                    <a href="#" class="close">X</a>
+                    <img src="./assets/img/curug2.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
+            </a>
+            <a href="#img2">
+                <div class="gallery-item text-center">
+                    <img src="./assets/img/curug1.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
+                <div class="overlay text-center" id="img2">
+                    <a href="#" class="close">X</a>
+                    <img src="./assets/img/curug1.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
+            </a>
+            <a href="#img3">
+                <div class="gallery-item text-center">
+                    <img src="./assets/img/twm.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
+                <div class="overlay text-center" id="img3">
+                    <a href="#" class="close">X</a>
+                    <img src="./assets/img/twm.jpg" alt="" class="img-raised">
                 </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
-                </div>
-            </div>
+            </a>
+
         </div>
     </div>
+
     <!-- end container -->
     <footer class="text-light" id="kontak">
         <div class="container">

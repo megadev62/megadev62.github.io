@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
+<body id="page-top">
     <!-- Navbar-->
     <nav class="navbar navbar-bg navbar-expand-lg navbar-dark sticky-top px-4 pt-3 pb-2">
         <div class="container-fluid">
-            <a class="navbar-brand font-title" href="#">
+            <a class="navbar-brand font-title" href="index.html">
                 <img src="./assets/img/kab_bogor.png" alt="" loading="lazy">Desa Cilember
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -45,8 +45,8 @@
                             <a class="dropdown-item" href="#">KK</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Galeri</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#page-top">Galeri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontak">Kontak</a>
@@ -57,60 +57,44 @@
 
     </nav>
     <!-- container -->
-    <div class="organisasi my-3">
-        <div class="container text-center">
-            <div class="font-title title">
-                <span class="border-bt-2">Struktur Organisasi</span>
+    <div class="container my-5 gallery-pages">
+        <div class="font-title title text-center">
+            <span>Galeri Foto</span>
+        </div>
+        <div class="gallery-grid text-center">
+            <div class="gallery-item pt-4 img-raised rounded">
+                <a href="gallery-detail.html">
+                    <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
+                    <p class="font-title">Curug</p>
+                </a>
             </div>
-            <div class="struktur row mt-4">
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Suhendi Hovenir</h4>
-                    <p class="text-warning">Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Wakil Kepala Desa</p>
-                </div>
-                <div class="tim col-md-4 col-xs-12">
-                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
-                    <h4 class="font-title">Tony Stark</h4>
-                    <p class="text-warning">Sekeretaris Desa</p>
-                </div>
+            <div class="gallery-item pt-4 img-raised rounded">
+                <a href="gallery-detail.html">
+                    <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
+                    <p class="font-title">Curug</p>
+                </a>
+            </div>
+            <div class="gallery-item pt-4 img-raised rounded">
+                <a href="gallery-detail.html">
+                    <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
+                    <p class="font-title">Curug</p>
+                </a>
+            </div>
+            <div class="gallery-item pt-4 img-raised rounded">
+                <a href="gallery-detail.html">
+                    <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
+                    <p class="font-title">Curug</p>
+                </a>
+            </div>
+            <div class="gallery-item pt-4 img-raised rounded">
+                <a href="gallery-detail.html">
+                    <img src="./assets/img/curug2.jpg" alt="" class="mb-3">
+                    <p class="font-title">Curug</p>
+                </a>
             </div>
         </div>
     </div>
+
     <!-- end container -->
     <footer class="text-light" id="kontak">
         <div class="container">
