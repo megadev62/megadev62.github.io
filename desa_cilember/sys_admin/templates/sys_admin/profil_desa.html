@@ -1,0 +1,65 @@
+{% extends 'partials/main.html' %}
+{% load static %}
+    {% block content %}
+    {% include 'partials/navbar.html' %}
+    <!-- Jumbotron -->
+    <div class="p-3 text-center bg-light">
+        <span class="btn btn-lg btn-success btn-floating shadow-sm mb-1"><i class="fas fa-building fa-lg"></i></span>
+        <h4>Profil Desa</h4>
+    </div>
+    <!-- Jumbotron -->
+    <div class="container p-3">
+        
+        <div class="row g-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-header text-center mb-3">Informasi Desa</h5>
+                            {% for i in post_list %}
+                            <div class="text-center">
+                                <img src="{% static 'img/logosite.png' %}" alt="..." width="100" height="100"/>
+                            </div>
+                            <figure class="text-center">
+                                <blockquote class="blockquote">
+                                    <p>{{i.nama}}</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    {{i.alamat}} {{i.prov}} {{i.pos}}
+                                </figcaption>
+                            </figure>
+                            <div class="text-center mb-3">
+                                <a href="#" class="btn btn-lg btn-rounded btn-primary btn-floating"><i class="fas fa-envelope fa-2x"></i></a>
+                                <a href="#" class="btn btn-lg btn-rounded btn-info btn-floating"><i class="fas fa-phone fa-2x"></i></a>
+                                <a href="#" class="btn btn-lg btn-rounded btn-success btn-floating"><i class="fab fa-whatsapp fa-2x"></i></a>
+                            </div>
+                            <p class="note note-success">
+                                <strong>Visi :</strong><br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus
+                                delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?
+                            </p>
+                            <p class="note note-success">
+                                <strong>Misi :</strong><br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus
+                                delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?
+                            </p>
+                            <p class="note note-success">
+                                <strong>Sambutan Kepala Desa :</strong><br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Cum doloremque officia laboriosam. Itaque ex obcaecati architecto! Qui necessitatibus
+                                delectus placeat illo rem id nisi consequatur esse, sint perspiciatis soluta porro?
+                            </p>
+                            <div class="d-grid gap-3 d-md-flex justify-content-md-center card-footer">
+                                <a href="{% url 'edit_profil' i.kades %}" class="btn btn-rounded btn-success mt-1">Ubah Profil Desa</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'partials/footer.html' %}
+    {% endblock content %} 

@@ -1,0 +1,58 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'dashboard' %}">
+            <img src="{% static '/img/logosite.png' %}" alt="" width="30" height="30"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'dashboard' %}">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'profil_desa' %}">Profil Desa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">Data Desa</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="{% url 'profil_aparatur' %}">Profil Aparatur</a></li>
+                        <li><a class="dropdown-item" href="{% url 'data_penduduk' %}">Data Penduduk</a></li>
+                        <li><a class="dropdown-item" href="{% url 'data_pelayanan' %}">Data Pelayanan</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'data_berita' %}">Berita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'data_galeri' %}">Galeri</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-comments fa-lg"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">6</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell fa-lg"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger">12</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown me-3 me-lg-1">
+                    <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-chevron-circle-down fa-lg"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Ubah Password</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

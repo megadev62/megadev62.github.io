@@ -1,0 +1,189 @@
+{% extends 'partials/main.html' %}
+{% load static %}
+    {% block content %}
+    {% include 'partials/navbar.html' %}
+    <!-- Jumbotron -->
+    <div class="p-3 text-center bg-light">
+        <span class="btn btn-lg btn-success btn-floating shadow-sm mb-1"><i class="fas fa-home fa-lg"></i></span>
+        <h4>Dashboard</h4>
+    </div>
+    <!-- Jumbotron -->
+    <div class="container p-3">
+        <div class="row g-3 mb-3">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                        Some quick example text to build on the card title and make up the bulk of the
+                        card's content.
+                    </p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3 mb-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <canvas id="mylineChart"></canvas>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <canvas id="mypieChart"></canvas>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted mb-3">Pelayanan Terbaru</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm text-nowrap text-center">
+                                <thead class="align-middle">
+                                    <tr class="table-success">
+                                        <th scope="col">No.</th>
+                                        <th class="text-start" scope="col">Nama Lengkap</th>
+                                        <th class="text-start" scope="col">NIK</th>
+                                        <th class="text-start" scope="col">Jenis Pelayanan</th>
+                                        <th class="text-start" scope="col">Jenis Surat</th>
+                                        <th scope="col">Dibuat</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-middle">
+                                    {% for i in post_list %}
+                                    <tr>
+                                        <th scope="row">{{forloop.counter}}</th>
+                                        <td class="text-start">{{i.judul}}</td>
+                                        <td>{{i.created}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="{% url 'data_pelayanan' %}" class="btn btn-rounded btn-link">Lihat detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted mb-3">Berita Terbaru</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm text-nowrap text-center">
+                                <thead class="align-middle">
+                                    <tr class="table-success">
+                                        <th scope="col">No.</th>
+                                        <th class="text-start" scope="col">Judul Berita</th>
+                                        <th scope="col">Dibuat</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-middle">
+                                    {% for i in berita %}
+                                    <tr>
+                                        <th scope="row">{{forloop.counter}}</th>
+                                        <td class="text-start">{{i.judul}}</td>
+                                        <td>{{i.created}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="{% url 'data_berita' %}" class="btn btn-rounded btn-link">Lihat detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-muted mb-3">Galeri Terbaru</h5>
+                        <div class="table-responsive">
+                            <table class="table table-sm text-nowrap text-center">
+                                <thead class="align-middle">
+                                    <tr class="table-success">
+                                        <th scope="col">No.</th>
+                                        <th class="text-start" scope="col">Judul Galeri</th>
+                                        <th scope="col">Dibuat</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="align-middle">
+                                    {% for i in galeri %}
+                                    <tr>
+                                        <th scope="row">{{forloop.counter}}</th>
+                                        <td class="text-start">{{i.judul}}</td>
+                                        <td>{{i.created}}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-3">
+                            <a href="{% url 'data_galeri' %}" class="btn btn-rounded btn-link">Lihat detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'partials/footer.html' %}
+    {% endblock content %} 

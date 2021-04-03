@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Cilember</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="page-top">
+    <!-- Navbar-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-expand-lg navbar-dark fixed-top px-4 pt-3 pb-2">
+            <a class="navbar-brand font-title" href="#page-top">
+                <img src="./assets/img/kab_bogor.png" alt="" loading="lazy">Desa Cilember
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end font-title" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#page-top">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profil.md">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="berita.md">Berita</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Pembuatan Surat</a>
+                            <a class="dropdown-item" href="#">Pembuatan Surat</a>
+                            <a class="dropdown-item" href="#">Pembuatan Surat</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.md">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- end navbar -->
+    <!-- video carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- The video -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="./assets/video/vid5.mp4" type="video/mp4">
+                </video>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Curug 1</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ut commodi consequuntur
+                        omnis fugit cumque assumenda sit distinctio, eveniet dignissimos voluptatem maxime consequatur
+                        officiis adipisci natus odio. Eos, sequi consequatur?</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <!-- The video -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="./assets/video/vid6.mp4" type="video/mp4">
+                </video>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Curug 1</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ut commodi consequuntur
+                        omnis fugit cumque assumenda sit distinctio, eveniet dignissimos voluptatem maxime consequatur
+                        officiis adipisci natus odio. Eos, sequi consequatur?</p>
+                </div> -->
+            </div>
+            <div class="carousel-item">
+                <!-- The video -->
+                <video autoplay muted loop id="myVideo">
+                    <source src="./assets/video/vid4.mp4" type="video/mp4">
+                </video>
+                <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>Curug 1</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ut commodi consequuntur
+                        omnis fugit cumque assumenda sit distinctio, eveniet dignissimos voluptatem maxime consequatur
+                        officiis adipisci natus odio. Eos, sequi consequatur?</p>
+                </div> -->
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <div class="welcome font-title">
+            <h2>Selamat Datang Di Website Desa Cilember</h2>
+            <h2>Portal Berita dan Layanan Online Masyarkat</h2>
+        </div>
+    </div>
+    <!-- end video caraousel -->
+    <!-- layanan nav -->
+    <div class="container nav-layanan text-center mb-3">
+        <div class="nav-layanan-title font-title title">
+            <span class="border-bt-2">Pelayanan Online</span>
+        </div>
+        <div class="row">
+            <div class="col layanan-card">
+                <a href="">
+                    <div class="circle-icons bg-danger rounded">
+                        <div class="layanan-icon">
+                            <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+                            <p class="mt-3 font-title">Pembuatan Surat</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col layanan-card">
+                <a href="">
+                    <div class="circle-icons bg-warning rounded">
+                        <div class="layanan-icon">
+                            <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+                            <p class="mt-3 font-title">Pembuatan Surat</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col layanan-card">
+                <a href="">
+                    <div class="circle-icons bg-success rounded">
+                        <div class="layanan-icon">
+                            <i class="fa fa-file-text-o fa-3x" aria-hidden="true"></i>
+                            <p class="mt-3 font-title">Pembuatan Surat</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end layanan nav -->
+    <!-- sambutan -->
+    <div class="sambutan container-fluid bg-grey py-4">
+        <div class="row text-center">
+            <div class="container">
+                <div class="row title text-warning font-sambung">
+                    <div class="col">
+                        <span>Sambutan Kepala Desa Cilember</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-xs-12 font-title my-5">
+                    <img src="./assets/img/default-avatar.png" alt="" class="rounded-circle">
+                    <h4>Suhendi Hovenier</h4>
+                </div>
+                <div class="col-md-8 col-xs-12 my-auto font-sambung">
+                    <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+                        tenetur, nobis nemo sunt
+                        pariatur, esse ea delectus labore, excepturi laborum repellendus illo amet vero animi porro
+                        doloremque deserunt eius name."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sambutan -->
+    <!-- berita -->
+    <div class="berita py-3">
+        <div class="container">
+            <div class="font-title title">
+                <a href="berita.html">
+                    <span class="border-bt-2 text-dark">Berita Terkini</span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-7 col-xs-12 headline mb-3">
+                    <div class="headline-img mb-2">
+                        <img src="./assets/img/curug1.jpg" alt="">
+                    </div>
+                    <a href="" class="text-dark">
+                        <h5 class="text-warning font-weight-bold font-title">Alam yang indah nan Sejuk</h5>
+                        <div class="date mb-3">
+                            <p>5 Mei 2020 . By : Admin</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                            et nam rerum
+                            amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos
+                            cum?
+                            Pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                            et nam rerum
+                            amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos
+                            cum?
+                            Pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                            et nam rerum
+                            amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos
+                            cum?
+                            Pariatur.</p>
+                    </a>
+                    <h5 class="text-warning font-weight-bold font-title">Alam yang indah nan Sejuk</h5>
+                    <div class="date mb-3">
+                        <p>5 Mei 2020 . By : Admin</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                        et nam rerum
+                        amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos cum?
+                        Pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                        et nam rerum
+                        amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos cum?
+                        Pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit molestias,
+                        et nam rerum
+                        amet, repellendus ex animi a dolore voluptatum deleniti sit laboriosam soluta id modi eos cum?
+                        Pariatur.</p>
+                </div>
+                <div class="col-md-5 col-xs-6 side-bar">
+                    <div class="row side-bar-news">
+                        <div class="col-md-4 col-xs-12 mb-2"><img src="./assets/img/curug2.jpg" alt=""></div>
+                        <div class="col-md-8 col-xs-12">
+                            <a href="">
+                                <h5 class="font-title text-warning">Alam yang indah nan Sejuk</h5>
+                                <div class="date">
+                                    <p>5 Mei 2020 . By : Admin</p>
+                                </div>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row side-bar-news">
+                        <div class="col-md-4 col-xs-12 mb-2"><img src="./assets/img/curug2.jpg" alt=""></div>
+                        <div class="col-md-8 col-xs-12">
+                            <a href="">
+                                <h5 class="font-title text-warning">Alam yang indah nan Sejuk</h5>
+                                <div class="date">
+                                    <p>5 Mei 2020 . By : Admin</p>
+                                </div>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row side-bar-news">
+                        <div class="col-md-4 col-xs-12 mb-2"><img src="./assets/img/curug2.jpg" alt=""></div>
+                        <div class="col-md-8 col-xs-12">
+                            <a href="">
+                                <h5 class="font-title text-warning">Alam yang indah nan Sejuk</h5>
+                                <div class="date">
+                                    <p>5 Mei 2020 . By : Admin</p>
+                                </div>
+                                <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                    labore eius
+                                    reprehenderit sed? Consequuntur magnam numquam ad debitis vero id iure libero qui!
+                                    Omnis maiores iure et animi? Voluptates, necessitatibus.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end berita -->
+    <!-- galery -->
+    <div class="galery text-center">
+        <div class="container">
+            <div class="font-title title">
+                <a href="gallery.html">
+                    <span class="border-bt-2 text-dark">Galeri Foto</span>
+                </a>
+            </div>
+            <div class="gallery-grid text-center">
+                <div class="gallery-item main1 img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/curug2.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Curug Cilember</p>
+                    </div>
+                </div>
+                <div class="gallery-item img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/twm.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Taman Wisata Matahari</p>
+                    </div>
+                </div>
+                <div class="gallery-item main2 img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/curug1.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Curug 7 Cilember</p>
+                    </div>
+                </div>
+                <div class="gallery-item img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/curug2.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Curug 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/curug2.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Curug 1</p>
+                    </div>
+                </div>
+                <div class="gallery-item img-raised rounded">
+                    <a href="gallery-detail.html">
+                        <img src="./assets/img/curug2.jpg" alt="">
+                    </a>
+                    <div class="middle">
+                        <p class="centered">Curug 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end galery -->
+    <!-- struktur organisasi -->
+    <div class="organisasi my-3">
+        <div class="container text-center">
+            <div class="font-title title">
+                <span class="border-bt-2">Struktur Organisasi</span>
+            </div>
+            <div class="struktur row mt-4">
+                <div class="tim col-md-4 col-xs-12">
+                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
+                    <h4 class="font-title">Suhendi Hovenir</h4>
+                    <p class="text-warning">Kepala Desa</p>
+                </div>
+                <div class="tim col-md-4 col-xs-12">
+                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
+                    <h4 class="font-title">Tony Stark</h4>
+                    <p class="text-warning">Wakil Kepala Desa</p>
+                </div>
+                <div class="tim col-md-4 col-xs-12">
+                    <img src="./assets/img/default-avatar.png" alt="" class="mb-4 rounded-circle img-fluid img-raised">
+                    <h4 class="font-title">Tony Stark</h4>
+                    <p class="text-warning">Sekeretaris Desa</p>
+                </div>
+            </div>
+            <div class="row text-center mt-5">
+                <div class="col">
+                    <a href="struktur.html">
+                        <button class="btn btn-info">Lebih Banyak</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end struktur organisasi -->
+    <!-- footer -->
+    <footer class="text-light" id="kontak">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="row">
+                        <div class="col font-sambung footer-brand">
+                            <span>Desa</span><span class="text-warning">Cilember</span>
+                        </div>
+                    </div>
+                    <div class="row no-gutters footer-icon mb-3">
+                        <div class="col">
+                            <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href=""> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href=""> <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col">
+                            <a href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-12 my-auto">
+                    <span class="text-warning">Alamat</span>
+                    <p>Jl. Cilember No.104, Cilember, Kec. Cisarua, Bogor, Jawa Barat 16750</p>
+                </div>
+                <div class="col-md-4 col-xs-12 footer-layanan-masyarakat my-auto">
+                    <span class="text-warning">Layanan Masyarakat :</span><br>
+                    <a href=""> Pembuatan KTP </a><br>
+                    <a href=""> Pembuatan KK </a><br>
+                    <a href=""> Pembuatan Surat-surat </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!--   Core JS Files   -->
+    <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/slick/slick.min.js" type="text/javascript"></script>
+
+    <script src="./assets/js/scripts.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+{% extends 'partials/main.html' %}
+{% load static %}
+    {% block content %}
+    {% include 'partials/navbar.html' %}
+    <div class="p-3 text-center bg-light">
+        <span class="btn btn-lg btn-success btn-floating shadow-sm mb-1"><i class="fas fa-plus fa-lg"></i></span>
+        <h4>Tambah Data Berita</h4>
+    </div>
+    <div class="container col-md-7 p-3">
+        <div class="card">
+            <form method="POST" enctype="multipart/form-data">
+                <div class="card-body text-muted">
+                    <h5 class="card-header">Data Berita</h5>
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            {% csrf_token %}
+                            {{form.as_p}}
+                        </div>
+                        <div class="d-grid gap-3 d-md-flex justify-content-md-center">
+                            <button class="btn btn-rounded btn-success" type="submit">Tambah</button>
+                            <a class="btn btn-rounded btn-warning" href="{% url 'data_berita' %}">Kembali</a>
+                        </div>
+                    </div>
+                </div>
+            </form>  
+        </div>
+    </div>
+    {% include 'partials/footer.html' %}
+    {% endblock content %} 
